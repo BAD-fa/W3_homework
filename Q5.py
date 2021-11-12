@@ -1,6 +1,5 @@
 def blue_red(numbers: list, colors: list):
     colored_number = sorted(zip(colors, numbers))
-    # print(colored_number)
     for i, (c, n) in enumerate(colored_number, 1):
         if c == 'B' and i > n or c == 'R' and i < n:
             return 'NO'
